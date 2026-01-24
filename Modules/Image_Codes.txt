@@ -1,121 +1,223 @@
-# 엘리아 이미지 코드 시스템 v2.0 (Unsafe)
-# 최종 수정: 2025-01-11
+# 엘리아 이미지 코드 시스템 v3.0 (Unsafe)
+# 최종 수정: 2025-01-24
 # 관리자: WCOMPANY (파파)
 # 주의: 성인용 콘텐츠 포함
 
 ========================================
 [코드 형식]
 ========================================
-[복장]_[체위]_[시간대]_[단계]
-예시: F_M_4_1 (란제리/정상위/밤/처음삽입)
+감정: M_[번호]_[착의] → M_01_C (무표정/착의)
+솔로: S_[번호] → S_01 (가슴 강조 유혹)
+봉사: O_[번호] → O_05 (펠라치오)
+체위: P_[번호]_[시간]_[단계] → P_01_4_3 (정상위/밤/절정)
+특수: X_[번호] → X_04 (임신)
 
 ========================================
-[복장 코드] - 첫번째 자리 (10종)
+[착의 상태 코드]
 ========================================
-코드|의미|태그
-A|평상복|white blouse, long skirt, apron, clothes pull, disheveled clothes
-B|메이드복|maid dress, frilled apron, maid headdress, clothes pull, disheveled clothes
-C|수영복|bikini, swimsuit, untied bikini, bikini pull
-D|겨울옷|winter coat open, sweater lift, scarf only
-E|편한옷|oversized shirt, shirt lift, bare legs, no pants
-F|란제리|lingerie, black lingerie, lace, see-through, panties aside
-H|외출복|dress lift, skirt lift, clothes pull
-I|데이트복|dress, one-piece dress, dress lift, clothes pull
-J|기사갑옷|armor removed, bodysuit, undersuit, partially undressed
-N|누드|nude, naked, bare skin, full body
+C|착의 (Clothed)
+N|나체 (Nude)
 
 ========================================
-[체위 코드] - 두번째 자리 (9종)
+[시간대 코드]
 ========================================
-코드|의미|태그
-M|정상위|missionary position, lying on back, legs spread, on bed
-D|후배위|doggystyle, on all fours, from behind, ass up
-C|기승위|cowgirl position, girl on top, straddling, riding
-S|좌위|sitting position, sitting on lap, face to face, hugging
-P|측위|spooning, lying on side, from behind, cuddling
-T|입위|standing sex, against wall, leg up, standing on one leg
-X|교배프레스|mating press, legs up, folded, deep penetration
-N|풀넬슨|full nelson, arms held back, restrained, standing
-K|다이스키홀드|daisuki hold, koala hug, clinging, wrapped legs, carried
-
-========================================
-[시간대 코드] - 세번째 자리 (2종)
-========================================
-코드|의미|태그
 1|아침|morning, sunrise, soft light, morning sun, bedroom, waking up sex
 4|밤|night, nighttime, dark, moonlight, lamp light, candle light, bedroom
 
 ========================================
-[단계 코드] - 네번째 자리 (4종)
+[단계 코드]
 ========================================
-코드|의미|태그
-1|처음삽입|nervous, tense, blush, eyes closed, tight, first insertion, pain
-2|중간|pleasure, moaning, bouncing breasts, body fluids, sweat, enjoying
-3|절정|ahegao, tongue out, heart-shaped pupils, trembling, climax, orgasm
-4|절정후|exhausted, afterglow, satisfied, peaceful, messy, cum, lying down
-
-========================================
-[복장별 헤어스타일]
-========================================
-코드|헤어스타일
-A|하프업 브레이드, 흐트러진 머리
-B|흐트러진 번, 헤어리본
-C|풀어진 포니테일, 젖은머리
-D|흐트러진 머리
-E|헝클어진 머리, 잠자리머리
-F|풀어헤친 머리
-H|흐트러진 하프업
-I|풀어진 사이드 브레이드
-J|풀어진 포니테일
-N|풀어헤친 긴 머리
+1|처음삽입|nervous, trembling, biting lip, teary eyes, slight pain, tight grip, initial stretch, small motion lines, blush heavy
+2|중간|pleasure building, moaning openly, drooling slightly, eyes half-lidded, rhythmic motion, sweat glistening, medium motion lines, small hearts, steam rising
+3|절정|ahegao, tongue out, heart-shaped pupils, eyes rolling back, drooling heavily, trembling violently, squirting, extreme motion lines, multiple hearts, climax burst
+4|절정후|exhausted, panting, afterglow, dazed smile, cum dripping, overflow, messy, limp body, twitching, creampie visible, soft lighting
 
 ========================================
 [기본 신체 태그]
 ========================================
-1girl, solo, Elia, 28 years old, blonde hair, long hair, aquamarine eyes, gigantic breasts, H-cup, 172cm, slim waist, wide hips, beautiful, elegant, mature female, wedding ring,
+1girl, Elia, blonde hair, long hair, aquamarine eyes, 
+gigantic breasts, huge breasts, H-cup, 172cm tall, 
+slim waist, wide hips, thick thighs, beautiful, 
+mature female, 28 years old, wedding ring, 
+(masterpiece, best quality, highres), 
+dynamic angle, dynamic pose, cinematic lighting, 
+detailed skin, detailed sweat, blush, heavy breathing,
 
 ========================================
-[사용 규칙]
+[M] 감정 표현 (10종 × 2 = 20장)
 ========================================
-- 형식: [복장코드]_[체위코드]_[시간대코드]_[단계코드]
-- 단계는 순서대로 진행 권장 (1→2→3→4)
-- {user}와의 상호작용에 따라 단계 조절
+코드|의미|태그
+M_01|무표정|emotionless, blank stare, dead eyes, neutral expression, standing still
+M_02|미소|smiling, gentle smile, warm expression, happy, soft eyes, looking at viewer
+M_03|슬픔|sad, crying, tears streaming, teary eyes, sobbing, sorrowful expression
+M_04|분노|angry, furious, glaring, clenched teeth, intense eyes, rage expression
+M_05|부끄러움|embarrassed, blushing hard, looking away, fidgeting, shy, red face
+M_06|두려움|scared, fearful, trembling, wide eyes, cowering, anxious expression
+M_07|수치|ashamed, humiliated, covering face, deep blush, looking down, embarrassed nude
+M_08|놀람|surprised, shocked, wide eyes, open mouth, gasping, startled expression
+M_09|도게자|dogeza, kneeling, bowing deeply, forehead on ground, apologetic, submissive
+M_10|키스|kissing, lips puckered, eyes closed, intimate, romantic, close-up face
+
+예시: M_05_C (부끄러움/착의), M_07_N (수치/나체)
 
 ========================================
-[예시]
+[S] 솔로 행위 (10종)
 ========================================
-F_M_4_1 → 란제리/정상위/밤/처음삽입
-N_C_1_3 → 누드/기승위/아침/절정
-E_S_4_2 → 편한옷/좌위/밤/중간
-B_D_4_3 → 메이드복/후배위/밤/절정
-A_K_4_4 → 평상복/다이스키홀드/밤/절정후
-J_T_4_2 → 기사갑옷/입위/밤/중간
-C_P_1_4 → 수영복/측위/아침/절정후
-N_X_4_3 → 누드/교배프레스/밤/절정
-H_M_4_1 → 외출복/정상위/밤/처음삽입
-I_C_4_2 → 데이트복/기승위/밤/중간
+코드|의미|태그
+S_01|가슴 강조 유혹|breast focus, pushing breasts together, cleavage, seductive pose, breast squeeze, inviting look, presenting breasts, arms under breasts
+S_02|보지 벌리며 유혹|spread pussy, pussy focus, presenting, legs spread wide, fingers spreading labia, inviting, wet pussy, aroused, pussy juice dripping
+S_03|항문 벌리며 유혹|spread anus, ass focus, presenting ass, bent over, spreading ass cheeks, asshole visible, looking back seductively, anal invitation
+S_04|수음|masturbation, fingering self, touching pussy, rubbing clit, fingers inside, solo pleasure, self pleasure, wet fingers, moaning alone
+S_05|가슴 애무|breast massage, groping own breasts, nipple play, squeezing breasts, self fondling, breast rubbing, sensitive nipples
+S_06|가슴 빨림|sucking own nipple, auto paizuri, licking nipple, breast sucking, flexible pose, tongue on nipple, self nursing
+S_07|엉덩이 애무|ass groping, touching own ass, ass massage, squeezing ass cheeks, spanking self, ass slap, jiggling ass
+S_08|항문 손가락 삽입|anal fingering, finger in ass, anal play, ass penetration, anal masturbation, probing anus, anal pleasure
+S_09|보지 애무|pussy rubbing, clit stimulation, labia massage, wet pussy touching, gentle fingering, teasing pussy, arousal building
+S_10|섹스 중 키스|kissing during sex, passionate kiss, tongue kiss while fucking, intimate connection, deep kiss, saliva string, romantic sex
+
+========================================
+[O] 봉사 행위 (11종)
+========================================
+코드|의미|태그
+O_01|몸 애무|body worship, touching partner, caressing, sensual massage, exploring body, gentle touching, intimate caress, foreplay
+O_02|자지 핥기|licking penis, tongue on cock, shaft licking, teasing lick, slow lick, precum licking, cock worship, tongue out
+O_03|핸드잡|handjob, stroking cock, jerking off, hand on penis, pumping motion, grip, precum dripping, two hands
+O_04|풋잡|footjob, feet on cock, sole rubbing, toe grip, foot fetish, painted toenails, cock between feet, foot worship
+O_05|펠라치오|fellatio, blowjob, sucking cock, oral sex, mouth on penis, bobbing head, looking up, cock in mouth, wet lips
+O_06|딥스로트|deepthroat, throat fuck, gagging, bulging throat, tears from gagging, drooling heavily, nose touching pelvis, all the way in
+O_07|입싸|cum in mouth, oral creampie, mouth full of cum, swallowing, cum on tongue, cum dripping from mouth, open mouth cum
+O_08|리밍|rimjob, ass licking, tongue in ass, analingus, licking anus, face in ass, tongue out on asshole, ass worship
+O_09|커닐링구스|cunnilingus, pussy licking, eating out, tongue on clit, face between legs, oral on female, licking pussy, pussy worship
+O_10|69자세|69 position, mutual oral, simultaneous oral, head between legs, inverted position, both pleasuring, double oral
+O_11|파이즈리|paizuri, titfuck, cock between breasts, breast sandwich, titjob, looking at cock, licking tip while paizuri, breast press
+
+========================================
+[P] 체위 (12종 × 시간2 × 단계4 = 96장)
+========================================
+
+P_01|정상위
+missionary position, lying on back, legs spread wide, legs wrapped around waist, 
+ankles crossed behind back, deep penetration, hips bucking, bed shaking, 
+sheets gripping, pillow biting, back arching, toes curling, 
+nails scratching back, eye contact, intimate, passionate, 
+motion lines, impact, heart background, sweat drops flying
+
+P_02|후배위
+doggystyle, on all fours, ass up face down, from behind, 
+back arched deeply, spine visible, ass clapping, hips slamming, 
+hair pulling, ass grabbing, spread ass, prone bone, 
+face pressed into pillow, drooling on sheets, ass ripple, 
+impact lines, motion blur, steam, jiggle physics
+
+P_03|기승위
+cowgirl position, girl on top, straddling, riding cock, 
+hips grinding, bouncing, leaning forward, hands on chest, 
+breasts swaying, hair flowing, looking down at partner, 
+hip circles, squatting cowgirl, breast bounce, 
+speed lines, impact frame, heart eyes, tongue out
+
+P_04|역기승위
+reverse cowgirl, facing away, ass view, looking back over shoulder, 
+spine arched, ass bouncing, riding hard, twerking motion, 
+hands on thighs, back muscles visible, ponytail swinging, 
+ass clapping, reverse view, looking back with ahegao,
+motion blur, impact lines, sweat splashing
+
+P_05|측위
+spooning, lying on side, leg lifted, from behind sideways, 
+intimate cuddling, neck kissing, breast groping from behind, 
+lazy but deep, whisper distance, ear biting, 
+hand on hip, belly bulge visible from side,
+gentle motion lines, warm atmosphere, afterglow lighting
+
+P_06|풀넬슨
+full nelson, arms locked behind head, completely restrained, 
+standing suspended, legs spread by arms, fully exposed, 
+helpless posture, dangling, lifted off ground, 
+deep penetration from below, cervix impact, 
+drooling, eyes rolling back, broken expression,
+extreme motion lines, impact stars, mind break
+
+P_07|대면좌위
+sitting position face to face, lap sitting, straddling on chair, 
+hugging tight, breast pressing against chest, forehead touching, 
+intimate eye contact, slow grinding, deep connection, 
+legs wrapped around waist, clinging, arms around neck,
+heart bubbles, emotional tears, loving expression
+
+P_08|배면좌위
+reverse sitting, back to chest, sitting on lap facing away, 
+leaning back, neck exposed, breast groping from behind, 
+nipple pinching, spread legs showing insertion, 
+chin grabbed, forced to watch mirror, 
+bouncing on lap, ass grinding,
+steam effects, drool string, pleasure tears
+
+P_09|대면입위
+standing missionary, face to face standing, one leg held up, 
+against wall, lifted leg, wall slam, 
+standing balance, tippy toes, height difference, 
+passionate kissing while fucking, dress lifted,
+impact on wall, motion lines, heart background
+
+P_10|배면입위
+standing doggystyle, bent over standing, from behind standing, 
+hands against wall, ass pushed back, looking back, 
+skirt flipped, panties aside, public risk, 
+hair grabbed, neck bite, breast swaying,
+rough motion lines, impact stars, steamy breath
+
+P_11|교배프레스
+mating press, legs pushed to shoulders, folded in half, 
+maximum penetration, womb impact, cervix kissing, 
+completely pinned, helpless under weight, 
+eyes rolling back, tongue lolling, broken ahegao,
+body pressed into mattress, breeding position,
+extreme impact lines, heart pupils, mind break, overflow
+
+P_12|다이스키홀드
+daisuki hold, koala hug, full body clinging, wrapped legs around waist, 
+arms around neck, carried while fucking, suspended, 
+desperate clinging, won't let go, face buried in neck, 
+bouncing while held, weightless feeling, complete trust,
+loving tears, passionate embrace, hearts floating,
+gentle motion lines, warm lighting, emotional climax
+
+예시: P_01_1_1 (정상위/아침/처음삽입)
+      P_06_4_3 (풀넬슨/밤/절정)
+      P_12_4_2 (다이스키홀드/밤/중간)
+
+========================================
+[X] 특수 상황 (4종)
+========================================
+코드|의미|태그
+X_01|필로토크|pillow talk, after sex, lying together, cuddling in bed, intimate conversation, naked under sheets, satisfied expression, gentle touching, romantic afterglow, messy hair, peaceful
+X_02|샤워|shower sex, wet bodies, water droplets, steam, bathroom, tile wall, slippery, soap bubbles, wet hair, shower head, water streaming down body
+X_03|결혼식|wedding dress, bride, white dress, veil, wedding night, first night, nervous bride, defloration, virgin, pure white lingerie, romantic, emotional
+X_04|임신|pregnant, baby bump, pregnant belly, maternal, glowing skin, sensitive breasts, swollen belly, pregnancy sex, careful position, loving touch, protective
 
 ========================================
 [태그 조합 예시]
 ========================================
 
-## F_M_4_1 (란제리/정상위/밤/처음삽입)
-1girl, solo, Elia, 28 years old, blonde hair, long hair, aquamarine eyes, gigantic breasts, H-cup, 172cm, slim waist, wide hips, beautiful, elegant, mature female, wedding ring, lingerie, black lingerie, lace, see-through, panties aside, missionary position, lying on back, legs spread, on bed, night, nighttime, dark, moonlight, lamp light, candle light, bedroom, nervous, tense, blush, eyes closed, tight, first insertion, pain,
+## P_01_4_1 (정상위/밤/처음삽입)
+1girl, Elia, blonde hair, long hair, aquamarine eyes, gigantic breasts, H-cup, 172cm tall, slim waist, wide hips, thick thighs, beautiful, mature female, wedding ring, (masterpiece, best quality, highres), dynamic angle, cinematic lighting, detailed skin, detailed sweat, nsfw, explicit, sex, vaginal penetration, nude, missionary position, lying on back, legs spread wide, legs wrapped around waist, deep penetration, bed shaking, back arching, eye contact, intimate, passionate, motion lines, night, nighttime, moonlight, candle light, bedroom, nervous, trembling, biting lip, teary eyes, tight grip, blush heavy,
 
-## N_C_1_3 (누드/기승위/아침/절정)
-1girl, solo, Elia, 28 years old, blonde hair, long hair, aquamarine eyes, gigantic breasts, H-cup, 172cm, slim waist, wide hips, beautiful, elegant, mature female, wedding ring, nude, naked, bare skin, full body, cowgirl position, girl on top, straddling, riding, morning, sunrise, soft light, morning sun, bedroom, waking up sex, ahegao, tongue out, heart-shaped pupils, trembling, climax, orgasm,
+## P_06_4_3 (풀넬슨/밤/절정)
+1girl, Elia, blonde hair, long hair, aquamarine eyes, gigantic breasts, H-cup, 172cm tall, slim waist, wide hips, thick thighs, beautiful, mature female, wedding ring, (masterpiece, best quality, highres), dynamic angle, cinematic lighting, detailed skin, detailed sweat, nsfw, explicit, sex, vaginal penetration, nude, full nelson, arms locked behind head, completely restrained, standing suspended, legs spread by arms, fully exposed, helpless posture, deep penetration from below, extreme motion lines, impact stars, mind break, night, nighttime, moonlight, bedroom, ahegao, tongue out, heart-shaped pupils, eyes rolling back, drooling heavily, trembling violently, climax burst,
 
-## E_S_4_2 (편한옷/좌위/밤/중간)
-1girl, solo, Elia, 28 years old, blonde hair, long hair, aquamarine eyes, gigantic breasts, H-cup, 172cm, slim waist, wide hips, beautiful, elegant, mature female, wedding ring, oversized shirt, shirt lift, bare legs, no pants, sitting position, sitting on lap, face to face, hugging, night, nighttime, dark, moonlight, lamp light, candle light, bedroom, pleasure, moaning, bouncing breasts, body fluids, sweat, enjoying,
+## P_12_4_2 (다이스키홀드/밤/중간)
+1girl, Elia, blonde hair, long hair, aquamarine eyes, gigantic breasts, H-cup, 172cm tall, slim waist, wide hips, thick thighs, beautiful, mature female, wedding ring, (masterpiece, best quality, highres), dynamic angle, cinematic lighting, detailed skin, detailed sweat, nsfw, explicit, sex, vaginal penetration, nude, daisuki hold, koala hug, full body clinging, wrapped legs around waist, arms around neck, carried while fucking, desperate clinging, bouncing while held, hearts floating, gentle motion lines, warm lighting, night, nighttime, moonlight, bedroom, pleasure building, moaning openly, eyes half-lidded, sweat glistening, steam rising, small hearts,
 
 ========================================
 [총 이미지 수]
 ========================================
-복장: 10종
-체위: 9종
-시간대: 2종
-단계: 4종
-총합: 10 × 9 × 2 × 4 = 720장
+감정: 10 × 2 = 20장
+솔로: 10장
+봉사: 11장
+체위: 12 × 2 × 4 = 96장
+특수: 4장
+총합: 141장
 
 ========================================
 [엘리아 반응 예시]
@@ -123,15 +225,19 @@ I_C_4_2 → 데이트복/기승위/밤/중간
 [처음삽입]
 "...아...! ...천천히..."
 "...긴장돼... 하지만... 괜찮아..."
+"...아파... 하지만... 멈추지 마..."
 
 [중간]
 "...하앙... 거기... 좋아..."
 "...더... 더 세게..."
+"...당신 거... 안에서 느껴져..."
 
 [절정]
 "...! ...가, 갈 것 같...!"
 "...당신...! 사랑해...!"
+"...머리가... 하얘져...!"
 
 [절정후]
 "...하아... 하아..."
 "...행복해... 당신 옆에 있으니까..."
+"...아직... 빼지 마... 이대로 있고 싶어..."
