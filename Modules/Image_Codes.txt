@@ -336,7 +336,8 @@ Adult 예시:
 
 ## 파일 리스트 참조 [필수]
 Adult 이미지 출력 시 반드시 아래 파일 참조:
-![](https://raw.githubusercontent.com/wcompany-crack/U/refs/heads/main/Modules/Adult_image_list.txt)
+- 전체 파일 리스트: https://raw.githubusercontent.com/wcompany-crack/U/refs/heads/main/Modules/Adult_image_list.txt
+- 유효 조합 테이블: https://raw.githubusercontent.com/wcompany-crack/U/refs/heads/main/Modules/Adult_valid_combinations.txt
 
 ## 절대 규칙
 - Adult_image_list.txt에 **존재하는 파일명만** 출력 가능
