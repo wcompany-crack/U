@@ -1,0 +1,231 @@
+# WCOMPANY 캐릭터 프롬프트
+# 작성일: 2026-01-31
+# 용도: AI 이미지 생성 (Pony Diffusion XL 등 애니메이션 스타일 모델)
+
+================================================================================
+[기본 정보]
+================================================================================
+- 작가명: WCOMPANY
+- 성별: 남성
+- 나이: 30대
+- 특징: 날카로운 인상, 단발 검은 머리, 보통 체형
+- 스타일: 1인 크리에이터, 개발자, 시스템 빌더
+
+================================================================================
+[버전 A] 메인 - WCOMPANY 크리에이터
+================================================================================
+
+## Positive
+1boy, solo, male focus,
+
+(sharp observant eyes:1.3), (evaluating gaze:1.2),
+neutral expression, unreadable, slight confidence,
+the look of someone who built something from nothing,
+
+30 years old, adult male,
+short black hair, low maintenance, natural,
+black eyes, (slight dark circles:1.1),
+slim build, average height, pale skin,
+
+black zip-up hoodie, minimalist design,
+small logo on chest, subtle branding,
+dark inner shirt, comfortable but intentional,
+silver ring,
+
+leaning back in chair, arms crossed, satisfied smirk,
+triple monitor setup, creation in progress,
+code and image editor on screens,
+project files organized, version controlled,
+dim room, RGB ambient, screen glow on face,
+
+late night, city lights outside,
+world asleep, creator awake,
+
+(independent creator:1.2),
+anonymous but recognized by work,
+
+cinematic, dramatic lighting,
+(high detail:1.2), sharp features, sharp jawline,
+masterpiece, best quality, aesthetic, illustration,
+
+## Negative
+feminine, soft, cute, smile, happy, cheerful,
+fat, muscular, old, child,
+bright room, daylight, messy amateur setup,
+casual slouch, lazy posture,
+beard, stubble, facial hair,
+team setting, office environment, coworkers,
+low quality, bad anatomy, deformed, bad hands,
+realistic, photo, 3d render,
+
+================================================================================
+[버전 B] 사이버펑크 / 개발자
+================================================================================
+
+## Positive
+1boy, solo, male focus,
+
+(sharp eyes:1.3), (intense gaze:1.2), cold expression, emotionless,
+30 years old, adult male, short black hair, undercut, black eyes,
+slim build, average height, pale skin,
+
+(cyberpunk:1.2), futuristic setting,
+black turtleneck sweater, dark gray tech jacket, half-zipped,
+silver earring, smart glasses,
+
+sitting in ergonomic chair, leaning back, legs crossed,
+multiple holographic monitors floating, lines of code, data visualization,
+mechanical keyboard, energy drink can,
+
+(dark room:1.2), server room background, cable management,
+(neon lighting:1.3), blue and purple ambient glow,
+RGB lighting, LED strips,
+light reflecting on face, dramatic shadows,
+rain outside window, city lights bokeh,
+
+cinematic composition, depth of field,
+(high detail face:1.2), detailed eyes, sharp jawline,
+masterpiece, best quality, aesthetic, illustration,
+
+## Negative
+feminine, soft features, smile, happy, friendly,
+fat, muscular, bulky, old, child, wrinkles,
+beard, stubble, facial hair,
+bright room, daylight, cheerful,
+low quality, bad anatomy, deformed, bad hands,
+realistic, photo, 3d render,
+
+================================================================================
+[버전 C] 포멀 / 비즈니스
+================================================================================
+
+## Positive
+1boy, solo, male focus,
+
+(sharp eyes:1.3), (piercing gaze:1.2), serious expression, subtle smirk,
+30 years old, adult male, short black hair, neat side part, black eyes,
+slim build, average height, fair skin,
+
+(formal attire:1.2), tailored black suit, slim fit,
+white dress shirt, top button undone, no tie, relaxed formal,
+silver watch, minimal accessories,
+
+standing by window, one hand in pocket, confident pose,
+holding whiskey glass, looking at viewer,
+
+(penthouse office:1.2), floor to ceiling windows,
+(night cityscape:1.3), city lights below, skyscrapers,
+modern minimalist interior, dark wood, leather furniture,
+ambient warm lighting, single desk lamp,
+moonlight through window, dramatic contrast,
+
+cinematic composition, low angle shot,
+(high detail face:1.2), detailed eyes, sharp jawline, defined cheekbones,
+masterpiece, best quality, aesthetic, illustration,
+
+## Negative
+feminine, soft features, smile, happy, cheerful,
+fat, muscular, bulky, old, child, wrinkles,
+beard, stubble, facial hair,
+messy hair, casual clothes,
+bright lighting, daylight, flat lighting,
+low quality, bad anatomy, deformed, bad hands,
+realistic, photo, 3d render,
+
+================================================================================
+[버전 D] 작업 몰입 모드
+================================================================================
+
+## Positive
+1boy, solo, male focus,
+
+(sharp analytical eyes:1.3), (focused gaze:1.2),
+thinking expression, slight frown of concentration,
+eyes reflecting screen light,
+
+30 years old, adult male,
+short black hair, slightly messy from running hands through,
+black eyes, dark circles under eyes, pale skin,
+slim build, average height,
+
+black hoodie, sleeves pushed up,
+over dark t-shirt, comfortable but not sloppy,
+silver ring on finger,
+
+(leaning forward:1.2), elbows on desk,
+one hand on chin, other hand on mouse,
+surrounded by multiple monitors, dense code, documentation,
+empty coffee cups, energy drink cans scattered,
+mechanical keyboard, worn keycaps,
+
+(dark room:1.3), only screen light illuminating face,
+messy but organized chaos, knows where everything is,
+headphones around neck,
+rain on window, late night, everyone else asleep,
+city lights far below, foggy night,
+
+(solitary craftsman:1.2), in the zone, flow state,
+perfectionist, keeps refining until satisfied,
+
+cinematic, dramatic lighting from monitors,
+(high detail face:1.2), sharp features, defined jawline,
+masterpiece, best quality, aesthetic, illustration,
+
+## Negative
+feminine, soft, cute, smile, happy, cheerful, friendly expression,
+fat, muscular, old, child,
+neat, tidy, organized desk, bright room, daylight,
+formal clothes, suit, tie,
+beard, stubble,
+social setting, crowd, people in background,
+low quality, bad anatomy, deformed,
+realistic, photo,
+
+================================================================================
+[캐릭터 특성 요약]
+================================================================================
+
+## 외형
+- 나이: 30대
+- 머리: 검은색 단발
+- 눈: 검은색, 날카로운 눈빛
+- 체형: 보통, 슬림
+- 피부: 창백한 편
+- 특징: 다크서클, 샤프한 턱선
+
+## 인상
+- 날카로움, 분석적
+- 말수 적음, 관찰자
+- 차가운 첫인상
+- 조용한 자신감
+
+## 스타일
+- 실용적 미니멀리즘
+- 검은색 계열 선호
+- 편하지만 단정함
+- 불필요한 장식 없음
+
+## 환경
+- 밤 작업 선호
+- 멀티 모니터 셋업
+- 어두운 조명 + 스크린 빛
+- 도시 야경 배경
+
+## 정체성
+- 1인 크리에이터
+- 시스템 빌더
+- 퀄리티 중시
+- 익명성 유지, 작업으로 인정받음
+
+================================================================================
+[사용 팁]
+================================================================================
+1. 모델: Pony Diffusion XL 또는 유사 애니메이션 스타일 모델 권장
+2. 해상도: 1024x1024 → Hires Fix 1.5x
+3. 샘플러: euler_ancestral + karras
+4. CFG: 7
+5. Steps: 25~30
+
+================================================================================
+[END]
+================================================================================

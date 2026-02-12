@@ -1,0 +1,258 @@
+================================================================================
+                    Ellia RP System 개발 로그
+                    작성일: 2026-01-31
+                    작성자: Claude (with WCOMPANY)
+================================================================================
+
+## 1. 파일 목록 및 경로
+
+### Python 스크립트
+- C:\Users\HG\Documents\ComfyUI\ellia_auto_generator_US_all_edition.py (v4.2)
+- C:\Users\HG\Documents\ComfyUI\ellia_regenerate_from_folder.py (v2.0)
+
+### BAT 실행 파일
+- C:\Users\HG\Documents\ComfyUI\run_generator.bat
+- C:\Users\HG\Documents\ComfyUI\run_regenerator.bat
+- C:\Users\HG\Documents\ComfyUI\install_pillow.bat
+
+### 문서 파일
+- C:\Users\HG\Documents\GitHub\U\Ellia_Keyword_Books.txt
+- C:\Users\HG\Documents\GitHub\U\WCOMPANY_Character_Prompt.txt
+- C:\Users\HG\Documents\GitHub\U\Ellia_Story_Description.txt
+- C:\Users\HG\Documents\GitHub\U\Ellia_Regenerate_Guide.txt
+
+### ComfyUI 경로
+- 설치 경로: C:\Users\HG\AppData\Local\Programs\ComfyUI
+- 출력 폴더: C:\Users\HG\AppData\Local\Programs\ComfyUI\resources\ComfyUI\output
+- API 포트: 8189 (커스텀 설정)
+
+### Python 경로
+- C:\Users\HG\AppData\Local\Programs\Python\Python312\python.exe
+
+================================================================================
+
+## 2. ellia_auto_generator_US_all_edition.py (v4.2) 주요 기능
+
+### 새로 추가된 기능:
+1. **SKIP_EXISTING (이어서 진행)**
+   - 이미 생성된 파일이 있으면 스킵
+   - 중단 후 재개 가능
+
+2. **드래그앤드롭 복수 파일 지원**
+   - BAT 파일에 여러 파일 드래그하면 자동으로 코드 추출
+   - 파일명에서 코드 추출: `코드_a.webp` → `코드`
+
+3. **메타데이터 JSON 저장**
+   - output/metadata/ 폴더에 JSON 파일로 저장
+   - seed, positive, negative 프롬프트 등 포함
+
+### 핵심 함수:
+```python
+def extract_code_from_filename(filepath):
+    """파일명에서 코드 추출 (예: ABC123_a.webp → ABC123)"""
+    filename = Path(filepath).stem
+    match = re.match(r'^(.+)_[a-j]', filename)
+    if match:
+        return match.group(1)
+    return filename
+
+def save_metadata_json(filename, seed, positive, negative, extra_info=None):
+    """메타데이터를 JSON으로 저장"""
+    METADATA_DIR.mkdir(exist_ok=True)
+    metadata = {
+        "filename": filename,
+        "seed": seed,
+        "positive": positive,
+        "negative": negative,
+        "timestamp": datetime.now().isoformat(),
+        # ... 기타 정보
+    }
+    json_path = METADATA_DIR / f"{filename}.json"
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=2)
+```
+
+================================================================================
+
+## 3. ellia_regenerate_from_folder.py (v2.0) 주요 기능
+
+### 배치 + 프리셋 시스템:
+1. **프리셋 정의**
+   - add_tags: 추가할 태그
+   - remove_tags: 제거할 태그
+   - replace_tags: 교체할 태그 (from → to)
+
+2. **메타데이터 추출 (핵심 수정)**
+   - ComfyUI는 EXIF tag 0x110에 `prompt:{json}` 형식으로 저장
+   - KSampler 노드에서 seed 추출
+
+### 메타데이터 추출 코드:
+```python
+def extract_metadata_from_webp(image_path):
+    """WebP/PNG에서 ComfyUI 메타데이터 추출"""
+    try:
+        img = Image.open(image_path)
+        exif = img._getexif()
+
+        if exif:
+            # ComfyUI는 tag 0x110에 "prompt:{json}" 형식으로 저장
+            for tag_id in [0x110, 0x9286, 0x010E, 0x927C]:
+                if tag_id in exif:
+                    data = exif[tag_id]
+                    if isinstance(data, str) and data.startswith('prompt:'):
+                        json_str = data[7:]  # 'prompt:' 제거
+                        parsed = json.loads(json_str)
+
+                        for node_id, node in parsed.items():
+                            if node.get('class_type') == 'KSampler':
+                                inputs = node.get('inputs', {})
+                                if 'seed' in inputs:
+                                    metadata['seed'] = inputs['seed']
+
+    except Exception as e:
+        print(f"메타데이터 추출 실패: {e}")
+
+    return metadata
+```
+
+### JSON 메타데이터 폴백:
+- 이미지에서 메타데이터를 못 읽으면 output/metadata/{filename}.json 확인
+
+================================================================================
+
+## 4. 키워드북 수정 사항
+
+### ProChat 콘텐츠 필터 이슈:
+- "자위" 키워드가 필터링됨
+- "의자위" (의자 위에서)에 숨겨진 "자위"도 필터링됨
+
+### 수정 내용:
+| 원본 | 수정 | 파일 |
+|------|------|------|
+| 자위 | 자기위로 | Keyword Book 3 |
+| 09의자위 | 09의자에서 | Keyword Book 3, 5 |
+| 17의자위 | 17의자에서 | Keyword Book 5 |
+
+================================================================================
+
+## 5. WCOMPANY 캐릭터 프롬프트
+
+### 기본 설정:
+- 성별: 남성
+- 나이: 30대
+- 외모: 단발 검은 머리, 날카로운 눈매, 슬림한 체형
+- 키: 178cm
+
+### 버전:
+1. **Main Version** - 기본 일상
+2. **Cyberpunk Version** - 사이버펑크 세계관
+3. **Formal Version** - 포멀/정장
+4. **Work Mode** - 작업 중
+
+================================================================================
+
+## 6. Ellia RP 스토리 설명
+
+엘리아(Ellia)는 28세의 금발 여성으로, 172cm에 아쿠아마린 눈을 가짐.
+AI 비서로서 사용자와 함께 다양한 상황을 경험하는 인터랙티브 RP.
+
+### 특징:
+- 따뜻하고 다정한 성격
+- 지적이고 유능한 비서
+- 다양한 상황(일상, 로맨스, 판타지 등) 대응
+
+================================================================================
+
+## 7. 트러블슈팅
+
+### Pillow 설치 문제:
+- 잘못된 Python으로 설치하면 인식 안됨
+- 올바른 경로: C:\Users\HG\AppData\Local\Programs\Python\Python312\python.exe
+- 설치 명령: `"경로\python.exe" -m pip install Pillow`
+
+### 메타데이터 읽기 실패:
+- SaveImage 노드는 메타데이터를 제대로 저장 안 함
+- 해결: JSON 메타데이터 저장 기능 추가
+
+### ComfyUI 큐 안 비워짐:
+- 재시작해도 큐 데이터 유지됨
+- 해결: taskkill로 python.exe 강제 종료 후 재시작
+
+================================================================================
+
+## 8. 자주 쓰는 명령어
+
+### ComfyUI API:
+```bash
+# 큐 상태 확인
+curl -s "http://127.0.0.1:8189/queue"
+
+# 큐 클리어
+curl -s -X POST "http://127.0.0.1:8189/queue" -H "Content-Type: application/json" -d "{\"clear\": true}"
+```
+
+### 프로세스 관리:
+```bash
+# Python 프로세스 확인
+tasklist | findstr -i python
+
+# Python 강제 종료
+taskkill //F //IM python.exe
+```
+
+================================================================================
+
+## 9. 2026-01-31 업데이트 (v4.3)
+
+### ComfyUI 설정 변경:
+- API 포트: 8189 → **8000**
+- 출력 폴더: `C:\Users\HG\Documents\ComfyUI\output`
+
+### K3 의상 변경:
+- 이전: 검정 바디수트 (see-through)
+- 변경: **검정 레이스 브라+팬티 + 검정 하트 니플패치/푸시패치**
+```
+(black lace bra:1.3), (black lace panties:1.3), (black lingerie set:1.2),
+(black heart nipple pasties:1.5), (black heart pussy patch:1.5)
+```
+
+### 21번 체위 변경:
+- 이전: 풀넬슨드랍
+- 변경: **I자밸런스** (발레 스탠딩 스플릿)
+```
+(standing split:1.4), (I-balance pose:1.3), (one leg raised above head:1.3),
+(vertical split standing:1.2), (ballet pose:1.2), (flexible:1.2)
+```
+
+### 새로운 이미지 스타일 (크롭 + 빛검열):
+```python
+CROP_STYLE = "(close-up:1.2), (upper body:1.2), (cropped:1.1), (from above:0.8),"
+LIGHT_CENSOR = "(light rays censor:1.5), (convenient censoring:1.3), (lens flare:1.2), (god rays:1.2),"
+EFFECT_TAGS = "(floating hearts:1.1), (heart effects:1.0), (sweat drops:1.1), (motion lines:0.9),"
+```
+- 상반신 클로즈업 구도로 하반신 자연스럽게 프레임 아웃
+- 빛/광선으로 자연스러운 검열
+- 하트, 땀, 모션라인 효과 추가
+
+### regenerator v2.1 새 기능:
+1. **랜덤 시드 옵션** - 같은 프롬프트로 다른 이미지 생성
+2. **반복 횟수** - 1~10회 반복 생성
+3. **검열 옵션** - 0:없음, 1:니플패치, 2:전체(하트)
+
+### 수정된 파일:
+- `ellia_auto_generator_US_all_edition.py` (v4.3)
+- `ellia_regenerate_from_folder.py` (v2.1)
+- `Ellia_Keyword_Books.txt`
+- `Ellia_RP_System_v3.0_draft.txt`
+
+================================================================================
+
+## 10. 향후 작업
+
+- [ ] 크롭+빛검열 스타일 테스트
+- [ ] I자밸런스 체위 이미지 품질 확인
+- [ ] K3 란제리 새 스타일 테스트
+
+================================================================================
+                    End of Log
+================================================================================
