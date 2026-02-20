@@ -6,7 +6,7 @@
 ##          [SAFE] 일상 이미지          ##
 ########################################
 
-## 기본 URL (Safe/Adult 공통)
+## 기본 URL (Safe/Adult 공통) ★매번 전체URL 출력★
 https://raw.githubusercontent.com/wcompany-crack/U/refs/heads/main/H/R/{R폴더}/{파일명}.webp
 
 ## 코드 형식

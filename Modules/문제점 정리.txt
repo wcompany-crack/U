@@ -1,0 +1,36 @@
+문제점 정리
+
+ ti=티아, ir=이리스, li=릴리, lu=루나, mo=모아, am=아멜리아, co=코라, ve=벨라,
+  pe=페트라, gw=그웬, ar=아리아, vi=비올라, le=레나, ln=리엔, ha=하나,
+  se=세레니티, as=암모신
+
+1. 가슴 크기 태그가 너무 강함
+  - gigantic breasts:0.95~1.05, huge breasts:0.975 등
+  - 크기가 클수록 옷이 자동으로 벌어지거나 클리비지 생성
+
+  2. 의상 자체가 노출 유도
+  - 이리스: purple high-neck wrap — "wrap"이 감싸는 형태라 가슴 강조
+  - 티아: white vest + black top — 베스트가 열리면서 클리비지
+  - 루나: chest wrap — 가슴 감싸기 = 가슴 강조
+  - 아멜리아: white royal dress — 드레스가 가슴 라인 강조
+
+  3. 아르셀라 징표
+  - 현재 belly tattoo:1.3만 있긴 한데, 모델이 문신 = 피부 노출로 연상
+
+  4. 화풍 태그 편향
+  - quasarcake, wlop 등이 약간 NSFW 경향 → 옷을 벗기는 방향으로 치우침
+
+  5. covered chest:1.2만으로는 가슴 크기를 이길 수 없음
+  - 네거티브 cleavage:1.4도 gigantic breasts 앞에서는 효과 제한적
+
+  접근 방향 제안:
+  - A) 가슴 크기를 safe에서만 한 단계씩 낮추기
+  - B) 의상 태그를 더 보수적으로 (high collar, buttoned up 등)
+  - C) 아르셀라 징표를 safe에서는 얼굴만 남기기 (belly tattoo 제거)
+  - D) 위 전부 조합
+
+
+문제점 파악 및 의문
+
+
+
